@@ -11,24 +11,33 @@ knitr::opts_chunk$set(echo = TRUE)
 ## {.tabset .tabset-fade} 
 
 # <span style="color:red"> Supervised Learning </span>
-- Provide data directly to the machine. Provide features which can be labeled 
+- Provide data directly to the machine. Providing features which can be labeled.
 - The data is known as training data, and consists of a set of training examples. Each training example has one or more inputs and the desired output, also known as a supervisory signal. In the mathematical model, each training example is represented by an array or vector, sometimes called a feature vector, and the training data is represented by a matrix.
 * (Ex: weight of coin is a feature & coin type is the label)
 - The answer is already known with labeled data and is fed to the ML system to predict a value or feature.
-* Facial recognition (face or not face).
+* Facial recognition (either face or not a face).
 
 ### <span style="color:darkgreen"> Active Learning </span>
+- Used when labeled data is limited. 
+- Uses less labeled data, however the labeled data is does use is very effective. The machine will predict the unlabeled data is has confidence in, and let the human user label what it is less confident about.
 
 ### <span style="color:darkgreen"> Classification / Categorization </span>
-- Discrete data.
+- Discrete data 
 - Classification algorithms are used when the outputs are restricted to a limited set of values.
 * Algorithm that filters emails, the input would be an incoming email, and the output would be the name of the folder in which to file the email.
+* Will I like the song/movie, yes or no?
+* Spam or not spam?
+* Happy or not?
+* Disease or no disease?
 
 ### <span style="color:darkgreen"> Regression </span>
 - Numerical or Continuous data.
 - Used for prediction and forecasting. Determines casual relationship between indpendent and dependent variables.
 - Regression algorithms are used when the outputs may have any numerical value within a range.
 - Regression predictions can be evaluated using root mean squared error, whereas classification predictions cannot.
+* I have a list of historical data about how many times I drink coffee in a week. I use that data to predict how much I will drink in a new week.
+* Predicting house price.
+* Predicting stock price.
 
 ### <span style="color:darkgreen"> Similarity Learning </span>
 - Area of supervised machine learning closely related to regression and classification, but the goal is to learn from examples using a similarity function that measures how similar or related two objects are.
@@ -43,6 +52,7 @@ knitr::opts_chunk$set(echo = TRUE)
 - ML based on postive and negative feedback.
 
 ### <span style="color:darkgreen"> Clustering </span>
+- Data with simialr traits are divided into cluster groups.
 
 ### <span style="color:darkgreen"> Association </span>
 
